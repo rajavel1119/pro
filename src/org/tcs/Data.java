@@ -28,8 +28,16 @@ public class Data {
 		wd.findElement(By.xpath("//input[@class='EurolandTools-TotalReturnAndDividends-CalculatorTab-Input']")).sendKeys("43");
 		wd.findElement(By.xpath("//button[text()='Calculate']")).click();	
 	}
+	private void add() {
+		System.out.println("addition");
+	}
+
+
 	private void sub() {
 		System.out.println("subtraction");
 	}
+
+
+
 
 }
