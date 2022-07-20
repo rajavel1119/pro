@@ -7,13 +7,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Data {
-	
+
 	private void case1() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\ELCOT\\eclipse-workspace\\FrameWork\\driver\\chromedriver.exe");
 		WebDriver wd = new ChromeDriver();
 		wd.get("https://www.carlsberggroup.com/investor-relations/shares/investment-calculator/");
-	    wd.manage().window().maximize();
-	    Thread.sleep(3000);
+		wd.manage().window().maximize();
+		Thread.sleep(3000);
 		WebElement btn = wd.findElement(By.xpath("//button[text()='Allow all']"));
 		JavascriptExecutor js = (JavascriptExecutor)wd;
 		js.executeScript("arguments[0].click()",btn);
@@ -28,5 +28,8 @@ public class Data {
 		wd.findElement(By.xpath("//input[@class='EurolandTools-TotalReturnAndDividends-CalculatorTab-Input']")).sendKeys("43");
 		wd.findElement(By.xpath("//button[text()='Calculate']")).click();	
 	}
-	
+	private void sub() {
+		System.out.println("subtraction");
+	}
+
 }
