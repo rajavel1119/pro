@@ -37,7 +37,9 @@ public class Data {
 		System.out.println("subtraction");
 	}
 
-
+private void mul() {
+	System.out.println("multiplication");
+}
 
 
 }
